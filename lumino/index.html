@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lumino - Dashboard</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/datepicker3.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/dialog.css" rel="stylesheet">
+	<link href="css/slide.css" rel="stylesheet">
+
+	
+	<!--Custom Font-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="https://www.kit.edu.kh/"><span>KIT</span>IP Stream Camera</a>
+				<ul class="nav navbar-top-links navbar-right">
+					<a class="navbar-brand" href="http://127.0.0.1:8000/"><span>Admin </span>Dashboard</a>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<nav>
+		<div class="container">
+			<ul class="list-unstyled video-list-thumbs row">
+				<li class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+					<main id="content">
+						<button class=btn id="btn_map_open" data-iframesrc="http://10.10.11.128:8081/">
+							<img id=img_map class="img-map" src="http://www.tesco.com/carrier-bags/i/map.png" alt="View interactive map in a modal window.">
+						</button>
+					</main>
+				</li>
+
+
+				<a href="https://www.youtube.com/embed/Lipit2-WHIU"">
+				<li class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+					<main id="content">
+						<button class=btn id="btn_map_open1" data-iframesrc="http://10.10.11.128:8081/">
+							<img id=img_map class="img-map" src="http://www.tesco.com/carrier-bags/i/map.png" alt="View interactive map in a modal window.">
+						</button>
+					</main>
+				</li>
+				</a>
+
+
+				<li class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+					<main id="content">
+						<button class=btn id="btn_map_open" data-iframesrc="http://10.10.11.128:8081/">
+							<img id=img_map class="img-map" src="http://www.tesco.com/carrier-bags/i/map.png" alt="View interactive map in a modal window.">
+						</button>
+					</main>
+				</li>
+
+				<li class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+					<main id="content">
+						<button class=btn id="btn_map_open" data-iframesrc="http://10.10.11.128:8081/">
+							<img id=img_map class="img-map" src="http://www.tesco.com/carrier-bags/i/map.png" alt="View interactive map in a modal window.">
+						</button>
+					</main>
+				</li><li class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+					<main id="content">
+						<button class=btn id="btn_map_open" data-iframesrc="http://10.10.11.128:8081/">
+							<img id=img_map class="img-map" src="http://www.tesco.com/carrier-bags/i/map.png" alt="View interactive map in a modal window.">
+						</button>
+					</main>
+				</li><li class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+					<main id="content">
+						<button class=btn id="btn_map_open" data-iframesrc="http://10.10.11.128:8081/">
+							<img id=img_map class="img-map" src="http://www.tesco.com/carrier-bags/i/map.png" alt="View interactive map in a modal window.">
+						</button>
+					</main>
+				</li><li class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+					<main id="content">
+						<button class=btn id="btn_map_open" data-iframesrc="http://10.10.11.128:8081/">
+							<img id=img_map class="img-map" src="http://www.tesco.com/carrier-bags/i/map.png" alt="View interactive map in a modal window.">
+						</button>
+					</main>
+				</li><li class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+					<main id="content">
+						<button class=btn id="btn_map_open" data-iframesrc="http://10.10.11.128:8081/">
+							<img id=img_map class="img-map" src="http://www.tesco.com/carrier-bags/i/map.png" alt="View interactive map in a modal window.">
+						</button>
+					</main>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/chart.min.js"></script>
+	<script src="js/chart-data.js"></script>
+	<script src="js/easypiechart.js"></script>
+	<script src="js/easypiechart-data.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/custom.js"></script>
+	<script>
+		window.onload = function () {
+	var chart1 = document.getElementById("line-chart").getContext("2d");
+	window.myLine = new Chart(chart1).Line(lineChartData, {
+	responsive: true,
+	scaleLineColor: "rgba(0,0,0,.2)",
+	scaleGridLineColor: "rgba(0,0,0,.05)",
+	scaleFontColor: "#c5c7cc"
+	});
+};
+	</script>
+	<!--bottom nav bar script -->
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!--end bottom nav bar script -->
+	<script src="js/dialog.js"></script>
+		
+</body>
+</html>
